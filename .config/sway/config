@@ -207,9 +207,10 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Keyboard
+bindsym ctrl+space exec swaymsg input type:keyboard xkb_switch_layout next
+
 input "type:keyboard" {
     xkb_layout us,lt
-    xkb_options grp:alt_shift_toggle
 }
 
 # Include configs from 3 locations:
